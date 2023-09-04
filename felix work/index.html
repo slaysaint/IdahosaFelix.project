@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- use libraries -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <style>
+      .section_1 {
+        position: relative;
+      }
+      .intro1 {
+        position: absolute;
+        height: 80vh;
+        width: 100%;
+
+        z-index: -4;
+      }
+      #myname {
+        position: relative;
+        top: 70px;
+
+        font-family: PirataOne-Regular;
+      }
+      .intro1 {
+        color: white;
+        padding: 20px;
+      }
+      .intro1 p {
+        position: relative;
+        top: 70px;
+      }
+      .section_2 {
+        position: relative;
+        top: 500px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+      }
+      .section_2 a {
+        border: solid white 3px;
+      }
+      .works1,
+      .works2,
+      .works3,
+      .works4 {
+        box-shadow: 0 4px 7px black;
+      }
+      .works1 {
+        width: 24%;
+        padding: 10px;
+        background-color: blue;
+        padding: 20px;
+      }
+      .works1:hover {
+        animation: 4ms;
+        translate: -15px -10px;
+      }
+      .works2 {
+        width: 24%;
+        padding: 30px;
+        background-color: green;
+        padding: 20px;
+      }
+      .works2:hover {
+        animation: 4ms;
+        /* right and top */
+        translate: -15px -10px;
+      }
+      .works3 {
+        width: 24%;
+        padding: 10px;
+        background-color: purple;
+        padding: 20px;
+      }
+      .works3:hover {
+        animation: 4ms;
+        translate: -15px -10px;
+      }
+      .works4 {
+        width: 24%;
+        padding: 10px;
+        background-color: aqua;
+        padding: 20px;
+      }
+      .works4:hover {
+        animation: 4ms;
+        translate: -15px -10px;
+      }
+      #aboutme {
+        position: absolute;
+        top: 1000px;
+      }
+      #about_me {
+        position: absolute;
+        top: 1050px;
+        display: flex;
+        padding: 20px;
+      }
+      #my_imgg {
+        height: 75vh;
+        width: 90%;
+        border: 10px solid white;
+      }
+      #my_img {
+        width: 50%;
+
+        padding: 10px;
+      }
+      .felix-bio {
+        width: 50%;
+        padding: 10px;
+      }
+      #myworks {
+        position: absolute;
+        top: 1800px;
+      }
+      #my_works {
+        position: absolute;
+        top: 1850px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        width: 100%;
+      }
+      .roww {
+        display: flex;
+        justify-content: space-between;
+      }
+      #workimg_hover:hover {
+        /* note transition here */
+        transition: 0.6s;
+        opacity: 30%;
+      }
+      #work_img1 {
+        height: 40vh;
+        width: 100%;
+        padding: 10px;
+      }
+      #work_img2 {
+        height: 40vh;
+        width: 100%;
+        padding: 10px;
+      }
+      #work_img3 {
+        height: 40vh;
+        width: 70%;
+      }
+      #otherservices {
+        position: absolute;
+        top: 2430px;
+      }
+      #other_services {
+        position: absolute;
+        top: 2500px;
+      }
+      #getintouch {
+        position: absolute;
+        top: 3170px;
+        width: 70%;
+        padding: 40px;
+        /* padding-left: 100px; */
+      }
+      #ggg {
+        text-align: center;
+      }
+      #form_section {
+        position: absolute;
+        top: 3250px;
+        right: 10px;
+        color: white;
+      }
+      #footer {
+        position: absolute;
+        top: 3500px;
+        width: 100%;
+        background-color: #0e151b;
+      }
+      #footer a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <!-- had to be after to execute -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Idahosa Felix | web designer</title>
+  </head>
+
+  <body>
+    <!-- background -->
+    <video autoplay muted loop id="myVideo">
+      <source src="Computer Terminal.mp4" type="video/mp4" />
+    </video>
+    <!-- background -->
+    <!-- navbar -->
+    <div style="position: fixed; width: 100%; z-index: 10">
+      <header>
+        <div class="h1">
+          <!-- link to git -->
+          <a class="logo" style="color: white; text-decoration: none" href=""
+            >felix idahosa</a
+          >
+        </div>
+        <div class="header-left">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#aboutme">about me</a>
+              </li>
+              <li>
+                <a href="#myworks"> works</a>
+              </li>
+              <li>
+                <a href="#otherservices">resume</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="login-signup"></div>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector("nav");
+      hamburger.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+    <!-- nanvbar -->
+
+    <section class="section_1">
+      <div class="intro1">
+        <span class="display-1" id="myname"> FELIX IDAHOSA </span>
+        <p class="h4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nobis
+          aut fuga accusantium fugit iste deserunt enim error Lorem ipsum dolor
+          sit amet consectetur, adipisicing elit. Assumenda doloremque quam
+          facere veritatis?
+        </p>
+      </div>
+      <div class="intro_text"></div>
+    </section>
+    <!-- expiriences -->
+    <section class="section_2">
+      <a class="works1" href="#">
+        <div class="works1_d"></div>
+        <div class="works1_d"></div>
+        <div class="works1_d"></div>
+        <div class="works1_d"></div>
+      </a>
+      <a class="works2" href="#">
+        <div></div>
+      </a>
+      <a class="works3" href="#">
+        <div></div>
+      </a>
+      <a class="works4" href="#">
+        <div></div>
+      </a>
+    </section>
+    <!-- expiriences -->
+    <!-- about me -->
+    <div id="aboutme"></div>
+    <div
+      id="about_me"
+      style="color: whitesmoke"
+      class="container-4 w-container"
+    >
+      <div id="my_img">
+        <img
+          id="my_imgg"
+          src="images/photo_2022-06-27_22-09-10.jpg"
+          loading="lazy"
+          width="100%"
+          alt="A photo of me"
+          style=""
+        />
+      </div>
+      <div class="felix-bio">
+        <div id="aboutt">
+          <h2 style="font-family: PirataOne-Regular; font-size: 50px">
+            Who is felix?
+          </h2>
+          <p class="h4">
+            Idahosa-felix charles is a<span class="text-span-8">
+              web designer </span
+            >and<span class="text-span-9"> illustrator </span>from Lagos state,
+            Nigeria. <br />‍<br />Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Autem quis iusto itaque voluptates beatae, quo
+            cumque minus <br /><br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Alias eum a temporibus consectetur, aliquid
+            cupiditate corporis hic voluptas fugit facere minus vitae itaque!
+          </p>
+        </div>
+        <br />
+        <div style="margin-left: 50px; margin-right: 50px">
+          <a
+            style="
+              text-decoration: none;
+              color: white;
+              position: relative;
+              display: flex;
+              justify-content: center;
+              border: white solid 3px;
+              padding: 10px;
+            "
+            href="#getintouch"
+            class="link dark h6"
+            >get in touch &gt;</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+    <!--case studies -->
+
+    <!-- works -->
+    <div id="myworks"></div>
+    <section id="my_works">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>My works</h2>
+            <span
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Quisquam, inventore fugit maxime eos excepturi nam repudiandae
+              fugiat. Et a expedita, magni, mollitia dolorem impedit
+              reprehenderit nihil asperiores vero quibusdam doloremque?.</span
+            >
+          </div>
+        </div>
+        <div class="roww">
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="inner-content"></div>
+                </div>
+                <a id="workimg_hover" href="#">
+                  <img id="work_img1" src="images/desktop-design.jpg" />
+                </a>
+              </div>
+              <div class="down-content">
+                <h4>stuff</h4>
+                <span>My works</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="inner-content"></div>
+                </div>
+                <a id="workimg_hover" href="#">
+                  <img id="work_img2" src="images/desktop-preview.jpg" />
+                </a>
+              </div>
+              <div class="down-content">
+                <h4>stuff</h4>
+                <span>My works</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-item">
+              <div class="thumb">
+                <div class="hover-effect">
+                  <div class="inner-content"></div>
+                </div>
+                <a id="workimg_hover" href="#"
+                  ><img id="work_img3" src="images/mobile-design.jpg"
+                /></a>
+              </div>
+              <div class="down-content">
+                <h4>stuff</h4>
+                <span>My works</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- works -->
+    <!-- other services -->
+    <div id="otherservices"></div>
+    <section
+      style="color: white; width: 100%"
+      id="other_services"
+      class="our-services"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div style="text-align: center" class="section-heading">
+              <h2>Services</h2>
+              <span
+                >Details to details is what makes Hexashop different from the
+                other themes.</span
+              >
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-item">
+              <h4>Web design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                suspend. Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. In accusantium praesentium nemo minima natus harum culpa,
+                aperiam rerum, laborum voluptas, quod nulla ea? Dolorum
+                voluptatibus nihil earum ab itaque minima.
+              </p>
+              <img src="assets/images/service-01.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-item">
+              <h4>graphics design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                suspend. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolores reprehenderit voluptatum, hic minus perferendis
+                sunt, iure modi nisi, voluptatibus magni quidem quod obcaecati
+                molestias cum doloribus? Commodi laborum facere molestiae.
+              </p>
+              <img src="assets/images/service-02.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-item">
+              <h4>project management</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consecteturti adipiscing elit, sed
+                do eiusmod temp incididunt ut labore, et dolore quis ipsum
+                suspend. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Et ipsum iure eos repellat explicabo suscipit deleniti,
+                nesciunt recusandae impedit minima nobis quod, omnis rem beatae
+                qui. Quae ut dolores tenetur!
+              </p>
+              <img src="assets/images/service-03.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- other services -->
+    <!-- get in touch -->
+    <div id="getintouch">
+      <div
+        id="ggg"
+        class="display-3 text-white"
+        style="font-family: PirataOne-Regular"
+      >
+        get in touch
+      </div>
+      <div class="text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta illo,
+        ullam deleniti voluptatum nihil quo molestias quaerat vitae voluptatibus
+        porro, aut, quos nesciunt maxime est totam quibusdam unde sunt iure quam
+        in consectetur. Aspernatur, perspiciatis. Ut atque natus corrupti fuga
+        nemo, repellat suscipit aspernatur necessitatibus recusandae, laborum
+        maxime ducimus quidem!
+      </div>
+    </div>
+    <form id="form_section" action="">
+      <label for="name">Name:</label>
+      <br />
+      <input
+        style="background-color: black; border: 2px solid white; color: white"
+        name="name"
+        type="text"
+        placeholder="name"
+      />
+      <br />
+      <label for="email">Email:</label>
+      <br />
+      <input
+        style="background-color: black; border: 2px solid white; color: white"
+        name="email"
+        type="email"
+        placeholder="email"
+      />
+      <br />
+      <textarea
+        style="background-color: black; border: 2px solid white; color: white"
+        id="field-2"
+        name="field-2"
+        maxlength="5000"
+        placeholder="How Can I Help?"
+        required
+        data-name="Field 2"
+        class="form-field help w-input"
+      ></textarea>
+      <br />
+      <input
+        style="height: ; border-radius: 5px"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+    <!-- get in touch -->
+    <!-- footer -->
+    <footer id="footer" class="text-center text-lg-start text-white">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with me on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text--mdstart mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Felix Portfolio
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">web design</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">graphics design</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">c++</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">ui/ux</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">git hub</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">facebook</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">x</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                felidafex123@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +234 070 815 422 80</p>
+              <p><i class="fas fa-print me-3"></i> +234 070 644 189 80</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="#">Idahosa-felix Felix</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- script_links -->
+    <script src="JAVASCRIPT/index.js"></script>
+    <script src="JAVASCRIPT/bootstrap.js"></script>
+    <!-- script_links -->
+  </body>
+</html>

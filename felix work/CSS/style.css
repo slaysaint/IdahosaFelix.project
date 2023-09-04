@@ -1,0 +1,275 @@
+* {
+  font-family: sans-serif;
+}
+/* background video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+}
+/* background video */
+
+/* personal-font */
+@font-face {
+  font-family: PirataOne-Regular;
+  src: url("../font/PirataOne-Regular.ttf");
+}
+/* personal-font */
+
+/* navbar */
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #0e151b;
+}
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-family: PirataOne-Regular;
+}
+.logo :hover {
+  transform: scale();
+}
+header .header-left .logo {
+  width: 40px;
+}
+header .header-left nav {
+  margin-left: 30px;
+}
+header .header-left nav ul {
+  display: flex;
+  padding-left: 1px;
+}
+nav ul li {
+  list-style-type: none;
+
+  padding: 5px;
+}
+nav ul li a {
+  display: block;
+  color: #cfd9e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 15px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+  background-color: rgb(15, 53, 22);
+}
+nav .login-signup {
+  display: none;
+}
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+header .header-right .hamburger {
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+header .header-right .hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+}
+/* navbar */
+/* could use this as space */
+
+@media (max-width: 630px) {
+  header {
+    padding: 0 20px;
+  }
+  header .header-right .hamburger {
+    display: block;
+  }
+  header .header-left nav {
+    margin: 0;
+    position: absolute;
+    top: -195%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #020706;
+    transition: 0.3s;
+    text-align: center;
+    padding-left: -100px;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+  }
+  header .header-left nav.active {
+    position: absolute;
+    top: 70px;
+  }
+  header .header-left nav ul {
+    display: block;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    background-color: rgb(27, 90, 39);
+    border-radius: 15px;
+  }
+
+  /* index */
+  .intro1 {
+    padding: 20px;
+  }
+  .section_2 {
+    position: relative;
+    top: 500px;
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .section_2 a div {
+    height: 40vh;
+  }
+  .works1 {
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+  }
+  .works1:hover {
+    animation: 4ms;
+    translate: -15px -10px;
+  }
+  .works2 {
+    height: 40vh;
+    width: 100%;
+    background-color: green;
+  }
+  .works2:hover {
+    animation: 4ms;
+    /* right and top */
+    translate: -15px -10px;
+  }
+  .works3 {
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+  }
+  .works3:hover {
+    animation: 4ms;
+    translate: -15px -10px;
+  }
+  .works4 {
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+  }
+  .works4:hover {
+    animation: 4ms;
+    translate: -15px -10px;
+  }
+  #aboutme {
+    position: absolute;
+    top: 1900px;
+  }
+  #about_me {
+    position: absolute;
+    top: 2000px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #my_imgg {
+    height: 75vh;
+    width: 80%;
+    border: 10px solid white;
+  }
+  #my_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .felix-bio {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 0px;
+  }
+  #aboutt {
+    width: 100%;
+  }
+  #myworks {
+    position: absolute;
+    top: 3150px;
+  }
+  #my_works {
+    position: absolute;
+    top: 3290px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+  }
+  .roww {
+    flex-direction: column;
+  }
+  #work_img2 {
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+  }
+  #work_img1 {
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+  }
+  #otherservices {
+    position: absolute;
+    top: 4450px;
+  }
+  #other_services {
+    position: absolute;
+    top: 4600px;
+  }
+  #getintouch {
+    position: absolute;
+    top: 5400px;
+    padding: 20px;
+  }
+  #ggg {
+    text-align: center;
+  }
+  #form_section {
+    position: absolute;
+    top: 5700px;
+    color: white;
+    width: 50%;
+    text-align: center;
+    right: 25%;
+  }
+  #footer {
+    top: 6000px;
+  }
+
+  /* index */
+}
